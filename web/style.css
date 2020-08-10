@@ -1,0 +1,77 @@
+:root {
+	--text-color: #f0f4f5;
+	--background-color: #263343;
+	--accent-color: #d49466;
+}
+body {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+.navbar {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--background-color);
+	padding: 8px 16px;
+}
+.navbar_title {
+	font-size: 24px;
+}
+
+.navbar_menu {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding-left: 0;
+}
+.navbar_menu li {
+	padding: 4px 8px;
+	margin: 4px;
+}
+.navbar_menu li:hover {
+	background-color: var(--accent-color);
+	border-radius: 4px;
+}
+.contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+.navbar__togggleBtn {
+	position: absolute;
+	display: none;
+	top: 12px;
+	right: 32px;
+	font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar_menu {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 8px 24px;
+	}
+	.navbar_menu li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.navbar_menu.active {
+		display: flex;
+	}
+	.navbar__togggleBtn {
+		display: block;
+	}
+}

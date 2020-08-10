@@ -1,13 +1,8 @@
-# TIL(Today I Learned)
+# TIL (Today I Learned)
 
-## 부제목
+> 오늘 내가 어떤 공부를 했는 지 기록하는 곳
 
-> 내용
+## 2020. 08 second-week(10~16)
 
----
-
-## 부제목
-
-> 내용
-
----
+- [ ] web pre-study: HTML, CSS, Javascipt
+- [ ] Data analysis
