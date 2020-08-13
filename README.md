@@ -7,3 +7,4 @@
 
 - [ ] web pre-study: HTML, CSS, Javascipt
 - [ ] Data analysis
+- [ ] python study
