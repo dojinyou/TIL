@@ -33,8 +33,10 @@ print(reduce(lambda x,y:x+y,[1,2,3,4,5]))
 print(reduce(lambda x,y:x+y,[1,2,3,4,5],-5))
 # 10
 
+# 팩토리얼 정의가 1부터 n까지의 모든 자연수의 곱
 def factorial(n):
-	return reduce(
-		lambda x,y: x*y, range(1,n+1))
+	return reduce(lambda x,y: x*y, range(1,n+1))
 print(factorial(3))
 # 6 
+
+# filter도 한번 공부해보길!

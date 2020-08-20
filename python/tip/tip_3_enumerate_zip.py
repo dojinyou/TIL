@@ -28,3 +28,4 @@ for a, b in zip(alist, blist):
 # a3 b3
 
 print([sum(x) for x in zip((1,2,3), (10,20,30), (100,200,300))])
+# [111,222,333]

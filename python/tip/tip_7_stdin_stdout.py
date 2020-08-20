@@ -17,7 +17,7 @@ import sys
 
 # --------------------------------------------------
 
-# assert
+# assert => test code 
 # 가정설정문? test 및 debug에 도움을 준다.
 x = int(input())
 assert x % 2 == 0, "홀수입니다."
@@ -25,3 +25,4 @@ print(x)
 
 
 # asyncio, await, decorator, wraps 등 다양한 것들에 대해서도 공부해보길!
+# unittest

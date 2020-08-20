@@ -11,6 +11,7 @@ for i in range(5):
 	deque_list.append(i)
 	deque_list.appendleft(i)
 print(deque_list)
+# deque([4, 3, 2, 1, 0, 0, 1, 2, 3, 4])
 print(dir(deque_list))
 
 # --------------------------------------------------------
@@ -21,13 +22,13 @@ from collections import Counter
 print(Counter("Hello world"))
 # Counter({'l': 3, 'o': 2, 'H': 1, 'e': 1, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 print(Counter("Hello world").most_common(1))
-# [('l', 3)]
+# [('l', 3)], [('l', 3), ('o', 2)]
 print(*Counter("Hello world").most_common(1))
 # ('l', 3)
 # --------------------------------------------------------
 
 # OrderDict
-# 순서가 있는  dictionary
+# 순서가 있는 dictionary
 from collections import OrderedDict
 d = {}
 d['x']=100
