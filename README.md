@@ -10,5 +10,13 @@
 	 08-20 Front-End
 	 <p>2020 NAVER TECH Concert FE 시청 및 notion 기록</p>
 	 </li>
+	 <li>
+	 08-21 Front-End
+	 <p>WEB PACK 개념 공부</p>
+	 </li>
+	 <li>
+	 08-22 Front-End
+	 <p>ESLint 개념 공부</p>
+	 </li>
 	</ul>
 </details>
