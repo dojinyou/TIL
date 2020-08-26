@@ -31,5 +31,13 @@
 	 08-24 Front-End
 	 <p> Node Package Management(NPM) 공부</p>
 	 </li>
+	 <li>
+	 08-25 Front-End
+	 <p> Babel 공부</p>
+	 </li>
+	 <li>
+	 08-26 Front-End
+	 <p> webpack 추가 공부</p>
+	 </li>
 	</ul>
 </details>
