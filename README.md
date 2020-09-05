@@ -39,5 +39,10 @@
 	 08-26 Front-End
 	 <p> webpack 추가 공부</p>
 	 </li>
+	 <li>
+	 08-28 git
+	 <p> git branch, merge 기능 학습</p>
+	 </li>
 	</ul>
+	
 </details>
