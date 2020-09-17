@@ -30,15 +30,44 @@
 		<section>
 			<article id="shadow">
 				<box>
-					<h1>제목</h1>
+					<h1>제목-----------------</h1>
 					<p>본문</p>
+					<details open>
+						<summary>
+							<div id="years">2020</div>
+							<div id="angle"><i class="fas fa-angle-down"></i></div></i></summary>
+						<p>ㅇㄴ미러ㅣㅇㄴ런ㅁㅇ</p>
+					</details>
 				</box>
 			</article>
 			<article id="surface">
-				<box>
-					<h1>제목</h1>
-					<p>본문</p>
-				</box>
+				<form action="#" name="test" method="GET">
+					이름 : <input type="text" value=""><br>
+					암호 : <input type="password"" value="" maxlength="255"><br>
+					국적 : <input type="ㅅㄷㅌㅅ"" value="" list="countries"><br>
+					자소서 : <textarea cols="20" rows="5">이곳에 자기소개서 작성</textarea>
+					<datalist id="countries">
+						<option value="가나"></option>
+						<option value="스위스"></option>
+						<option value="브라질"></option>
+						<option value="대한민국"></option>
+					</datalist>
+				</form>
+				<form>
+					검색: <input type="text" size="10" value="">
+					<input type="button" value="Q1">
+					<button type="button">Q2</button><br>
+					submit 버튼 : <input type="submit" value="전송1">
+					<button type="submit">전송2</button><br>
+					reset 버튼 : <input type="reset" value="리셋1">
+					<button type="reset">리셋2</button><br>
+					이미지버튼 : <input type="image" src="media/button.png"
+					alt="이미지 버튼">
+					<button type="button">
+					<img src="media/button.png" alt="이미지 버튼">
+					</button>
+					</form>
+					
 			</article>
 		</section>
 		<footer class="contact">

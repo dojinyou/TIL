@@ -100,3 +100,11 @@ h1 {
 p {
 	color: #333333;
 }
+details > summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+	padding: 0 1em;
+	display: flex;
+	justify-content: space-between;
+}
