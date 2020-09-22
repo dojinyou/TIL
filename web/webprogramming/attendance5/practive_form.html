@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>기초웹 5주차 출석과제 - form tag 연습</title>
+	</head>
+	<body>
+		<h3>폼 태그 전체 연습</h3>
+		<hr />
+		<form name="fo" action="#" method="get">
+			<fieldset>
+				<legend>개인정보</legend>
+				<label for="userId">사용자 ID</label>
+				<input type="text" id="userId" size="15" value="" />
+				<p>
+					<label for="pwd">비밀번호</label>
+					<input type="password" id="pwd" size="15" value="" />
+				</p>
+
+				<p>email : <input type="email" placeholder="id@host" /></p>
+
+				<p>홈페이지 : <input type="url" placeholder="http://" /></p>
+
+				<p>전화번호 : <input type="tel" placeholder="010-1234-5678" /></p>
+
+				<p>
+					국적(input-datalist) :
+					<input type="text" name="country" list="countries" />
+					<datalist class="countries">
+						<option value="가나"></option>
+						<option value="스위스"></option>
+						<option value="브라질"></option>
+					</datalist>
+				</p>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>메뉴선택</legend>
+				메뉴검색 :
+				<input type="search" name="menuSearch" placeholder="메뉴 이름" />
+
+				<label for="menuS">메뉴(select) : </label>
+				<select name="chinaS" id="menuS">
+					<option value="1">짜장면</option>
+					<option value="2" selected>짬뽕</option>
+					<option value="3">탕수육</option>
+				</select>
+				<p>
+					<input type="checkbox" id="menuC1" name="chinaC" value="1" />
+					<label for="menuC1"
+						>짜장면
+						<img
+							src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2JVJ/image/vEBttMW9x_W027VoICmrbHh3fY4.png"
+							width="100px"
+							height="100px"
+					/></label>
+					<input type="checkbox" id="menuC2" name="chinaC" value="2" />
+					<label for="menuC2"
+						>짬뽕
+						<img
+							src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile23.uf.tistory.com%2Fimage%2F265BEF3F5614FAEB31905E"
+							width="100px"
+							height="100px"
+					/></label>
+					<input type="checkbox" id="menuC3" name="chinaC" value="3" />
+					<label for="menuC3"
+						>탕수육
+						<img
+							src="https://menutong.com/data/editor/1807/ecd5a44900819d17d795d0db26501604_1531719967_3302.jpg"
+							width="100px"
+							height="100px"
+					/></label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="chinaR" value="1" />
+						짜장면
+						<img
+							src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2JVJ/image/vEBttMW9x_W027VoICmrbHh3fY4.png"
+							width="100px"
+							height="100px"
+					/></label>
+					<label>
+						<input type="radio" name="chinaR" value="2" />
+						짬뽕
+						<img
+							src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile23.uf.tistory.com%2Fimage%2F265BEF3F5614FAEB31905E"
+							width="100px"
+							height="100px"
+					/></label>
+					<label>
+						<input type="radio" name="chinaR" value="3" />
+						탕수육
+						<img
+							src="https://menutong.com/data/editor/1807/ecd5a44900819d17d795d0db26501604_1531719967_3302.jpg"
+							width="100px"
+							height="100px"
+					/></label>
+				</p>
+				<br />
+				배달일 : <input type="date" value="" /><br /><br />
+				배달시간 : <input type="time" value="" /><br /><br />
+				배달요구사항 :
+				<textarea cols="60" rows="4">기타요구사항을 쓰세요</textarea>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>환경설정</legend>
+				글자색 선택
+				<input
+					type="color"
+					value="#00BFFF"
+					onchange="document.body.style.color=this.value"
+				/>
+				<p>
+					배경색 선택
+					<input
+						type="color"
+						value="#00BFFF"
+						onchange="document.body.style.background=this.value"
+					/>
+				</p>
+				웹프로그래밍 학습 시간 (0.0~10.0시간):
+				<input type="number" name="duration" min="0.0" max="10.0" step="0.5" />
+				<br /><br />
+				적정 학습 온도 : 10&deg;
+				<input type="range" name="temp" min="10" max="30" />30&deg;
+			</fieldset>
+			<br />
+			<p>
+				<input type="reset" value="취소" />
+				<input type="submit" value="완료" />
+			</p>
+		</form>
+	</body>
+</html>
