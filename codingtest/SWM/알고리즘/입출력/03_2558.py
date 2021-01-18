@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/submit/2558
+# https://www.acmicpc.net/problem/2558
 
 a = int(input())
 b = int(input())

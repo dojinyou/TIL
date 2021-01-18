@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/submit/10951
+# https://www.acmicpc.net/problem/10951
  
 while True:
     try:
