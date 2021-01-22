@@ -66,6 +66,14 @@
 	 01-19 SW Maestro Coding Test Practice
 	 <p> 동적프로그래밍(DP) 관련 예제 풀이</p>
 	 </li>
+	 <li>
+	 01-20 SW Maestro Coding Test Practice
+	 <p> 동적프로그래밍(DP) 관련 예제 풀이</p>
+	 </li>
+	 <li>
+	 01-21 SW Maestro Coding Test Practice
+	 <p> 동적프로그래밍(DP) 관련 예제 풀이</p>
+	 </li>
 	</ul>
 	
 </details>
