@@ -82,6 +82,10 @@
 	 01-23 SW Maestro Coding Test Practice
 	 <p> 동적프로그래밍(DP) 관련 예제 풀이</p>
 	 </li>
+	 <li>
+	 01-24 SW Maestro Coding Test Practice
+	 <p> 정렬(sorting), 자료구조(stack,queue,deck,LinkedList), 문자열(string)  관련 예제 풀이</p>
+	 </li>
 	</ul>
 	
 </details>
