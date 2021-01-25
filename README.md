@@ -86,6 +86,10 @@
 	 01-24 SW Maestro Coding Test Practice
 	 <p> 정렬(sorting), 자료구조(stack,queue,deck,LinkedList), 문자열(string)  관련 예제 풀이</p>
 	 </li>
+	 <li>
+	 01-25 SW Maestro Coding Test Practice
+	 <p> 수학(mathematic)  관련 예제 풀이</p>
+	 </li>
 	</ul>
 	
 </details>
