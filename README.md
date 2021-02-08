@@ -116,3 +116,12 @@
 	 </li>
 	</ul>
 </details>
+<details>
+	<summary>2021. 02 Second-week(08~14)</summary>
+	<ul>
+	 <li>
+	 02-08 SW Maestro Coding Test Practice
+	 <p> 수학(mathematic)  관련 예제 풀이</p>
+	 </li>
+	</ul>
+</details>
