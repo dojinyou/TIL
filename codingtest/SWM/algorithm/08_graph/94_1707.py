@@ -8,26 +8,24 @@ def checkBG(vertax):
 	color[vertax] = 1
 	while q :
 		v = q.popleft()
-		print(f'v={v}')
 		for i in adj[v]:
 			if color[i] == 0:
 				q.append(i)
 				color[i] = -color[v]
-			elif color[v] == color[i] :
-				return False
+			else :
+				if color[v] == color[i] :
+					return False
 	return True
 
 for _ in range(int(input())):
 	v, e = map(int, input().split())
 	adj = [[] for _ in range(v+1)] # O(n)
-	
+	color = [0]*(v+1)
+	isBinary = True
 	for _ in range(e): # O(m)
 		x, y = map(int,input().split())
 		adj[x].append(y)
 		adj[y].append(x)
-
-	color = [0]*(v+1)
-	isBinary = True
 	for i in range(1, v+1):
 		if color[i] == 0 :
 			if not checkBG(i) :
@@ -78,3 +76,35 @@ for _ in range(int(input())):
 # 	if isBinary :
 # 		print('Yes')
 
+from collections import deque
+import sys
+input = sys.stdin.readline
+def bfs(s):
+    color[s] = 1
+    q = deque()
+    q.append(s)
+    while q:
+        v = q.popleft()
+        for i in adj[v]:
+            if color[i] == 0:
+                color[i] = -color[v]
+                q.append(i)
+            else:
+                if color[i] == color[v]:
+                    return False
+    return True
+for _ in range(int(input())):
+    v, e = map(int, input().split())
+    isBinary = True
+    adj = [[] for i in range(v + 1)]
+    color = [0]*(v + 1)
+    for _ in range(e):
+        x, y = map(int, input().split())
+        adj[x].append(y)
+        adj[y].append(x)
+    for i in range(1, v + 1):
+        if color[i] == 0:
+            if not bfs(i):
+                isBinary = False
+                break
+    print("YES"if isBinary else "NO")
