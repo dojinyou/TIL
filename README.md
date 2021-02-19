@@ -158,5 +158,9 @@
 	 02-18 SW Maestro Coding Test Practice
 	 <p> 탐색(Search), 분할정복(DividedAndConquer) 관련 예제 풀이</p>
 	 </li>
+	 <li>
+	 02-19 SW Maestro Coding Test Practice
+	 <p> 분할정복(DividedAndConquer) 관련 예제 풀이</p>
+	 </li>
 	</ul>
 </details>
