@@ -144,7 +144,7 @@
 	 <p> 그래프(Graph)  관련 예제 풀이</p>
 	 </li>
 	</ul>
-	<summary>2021. 02 Second-week(15~21)</summary>
+	<summary>2021. 02 third-week(15~21)</summary>
 	<ul>
 	 <li>
 	 02-16 SW Maestro Coding Test Practice
@@ -165,6 +165,10 @@
 	 <li>
 	 02-20 SW Maestro Coding Test Practice
 	 <p> 분할정복(DividedAndConquer) 관련 예제 풀이</p>
+	 </li>
+	 <li>
+	 02-21 SW Maestro Coding Test Practice
+	 <p> 탐욕(Greedy) 관련 예제 풀이</p>
 	 </li>
 	</ul>
 </details>
