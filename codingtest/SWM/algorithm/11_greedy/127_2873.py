@@ -15,9 +15,9 @@ if h % 2 == 1 :
 elif w % 2 == 1 :
 	result += 'D'*(h-1)+'R'
 	for i in range(w//2):
-		result += 'U'*(w-1)+'R'+'D'*(w-1)+'R'
+		result += 'U'*(h-1)+'R'+'D'*(h-1)+'R'
 	print(result[:-1])
-else : # 패턴 확인 필요
+else : 
 	minValue = happyPoints[0][1]
 	minPoint = [0,1]
 	for i in range(h):
@@ -27,16 +27,27 @@ else : # 패턴 확인 필요
 				minValue = value
 				minPoint[0] = i
 				minPoint[1] = 2*j+(i+1)%2
-	if minPoint[1] % 2 == 0 :
-		for i in range(minPoint[1]//2):
-			result += 'D'*(h-1)+'R'+'U'*(h-1)+'R'
-		pattern = 'RDLD'
-		for i in range(h//2):
-			if minPoint[0]//2-1 == i :
-				result += 'RDD'
-				pattern = 'LDRD'
-			result += pattern
-		result = result[:-1]
-		result += 'D'
-		for i in range(minPoint[1]//2):
-			result += 'D'*(h-1)+'R'+'U'*(h-1)+'R'
+	print(minValue, minPoint)
+	minPointPassed = False
+	# 빠지는 게 없을 때 알고리즘
+	for i in range(h//2):
+		if minPoint[0]//2 == i :
+			for j in range(w//2):
+				if minPoint[1]//2 == j :
+					if minPoint[1]%2==0:
+						result += 'RDR'
+					else :
+						result += 'DRR'
+					minPointPassed = True
+				else :
+					if minPointPassed :
+						result += 'URDR'
+					else :
+						result += 'DRUR'
+			result = result[:-1]+'D'
+		else :
+			if not minPointPassed :
+				result += 'R'*(w-1)+'D'+'L'*(w-1)+'D'
+			else :
+				result += 'L'*(w-1)+'D'+'R'*(w-1)+'D'
+	print(result[:-1])

@@ -25,13 +25,13 @@ input = sys.stdin.readline
 # cards.sort()
 # for c in check :
 # 	print(binarySearch(c), end=' ')
-# cards = {}
-# n = int(input())
-# for i in list(map(int, input().split())):
-# 	cards[i] = 1
-# m = int(input())
-# for c in list(map(int, input().split())):
-# 	try :
-# 		print(cards[c], end=' ')
-# 	except :
-# 		print(0, end=' ')
+cards = {}
+n = int(input())
+for i in list(map(int, input().split())):
+	cards[i] = 1
+m = int(input())
+for c in list(map(int, input().split())):
+	try :
+		print(cards[c], end=' ')
+	except :
+		print(0, end=' ')

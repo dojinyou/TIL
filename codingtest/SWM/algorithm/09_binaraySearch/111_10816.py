@@ -47,8 +47,8 @@ def getUpperBound(array, value):
 n = int(input())
 cards = list(map(int, input().split()))
 cards.sort()
-# print(f'-----------------\n{cards}\n-----------------------')
+print(f'-----------------\n{cards}\n-----------------------')
 m = int(input())
 for c in list(map(int, input().split())):
-	# print(f'c = {c}, upper = {getUpperBound(cards, c)}, lower = {getLowerBound(cards,c)}')
-	print(getUpperBound(cards, c) - getLowerBound(cards,c), end=' ')
+	print(f'c = {c}, upper = {getUpperBound(cards, c)}, lower = {getLowerBound(cards,c)}')
+	# print(getUpperBound(cards, c) - getLowerBound(cards,c), end=' ')

@@ -44,7 +44,6 @@
 	 <p> git branch, merge 기능 학습</p>
 	 </li>
 	</ul>
-	
 </details>
 
 <details>
@@ -91,7 +90,6 @@
 	 <p> 수학(mathematic)  관련 예제 풀이</p>
 	 </li>
 	</ul>
-	
 </details>
 <details>
 	<summary>2021. 01 fourth-week(25~31)</summary>
@@ -101,7 +99,6 @@
 	 <p> 수학(mathematic)  관련 예제 풀이</p>
 	 </li>
 	</ul>
-	
 </details>
 <details>
 	<summary>2021. 02 first-week(01~07)</summary>
@@ -117,7 +114,7 @@
 	</ul>
 </details>
 <details>
-	<summary>2021. 02 Second-week(08~14)</summary>
+	<summary>2021. 02 second-week(08~14)</summary>
 	<ul>
 	 <li>
 	 02-08 SW Maestro Coding Test Practice
@@ -144,6 +141,8 @@
 	 <p> 그래프(Graph)  관련 예제 풀이</p>
 	 </li>
 	</ul>
+</details>
+<details>
 	<summary>2021. 02 third-week(15~21)</summary>
 	<ul>
 	 <li>
@@ -169,6 +168,15 @@
 	 <li>
 	 02-21 SW Maestro Coding Test Practice
 	 <p> 탐욕(Greedy) 관련 예제 풀이</p>
+	 </li>
+	</ul>
+</details>
+<details>
+	<summary>2021. 02 fourth-week(22~28)</summary>
+	<ul>
+	 <li>
+	 02-22 SW Maestro Coding Test Practice
+	 <p> 완전탐색(brute force)  관련 예제 풀이</p>
 	 </li>
 	</ul>
 </details>
