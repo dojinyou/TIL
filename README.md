@@ -178,5 +178,9 @@
 	 02-22 SW Maestro Coding Test Practice
 	 <p> 완전탐색(brute force)  관련 예제 풀이</p>
 	 </li>
+	 <li>
+	 02-23 SW Maestro Coding Test Practice
+	 <p> 완전탐색(brute force)  관련 예제 풀이</p>
+	 </li>
 	</ul>
 </details>

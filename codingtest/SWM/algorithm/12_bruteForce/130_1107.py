@@ -3,28 +3,21 @@
 import sys
 input = sys.stdin.readline
 
-n = int(input())
-m = int(input())
+N = int(input())
+M = int(input())
 broken = list(map(int,input().split()))
-if n > 97 and n < 103 :
-	print(abs(n-100))
-elif m == 0 :
-	print(1)
-elif m == 10 :
-	print(abs(m-100))
-else :
-	strN = str(n)
-	buttons = []
-	for i in range(10):
-		if i not in broken :
-			buttons.append(i)
-	value =[[]]
-	for c in strN :
-		for i, button in enumerate(buttons) :
-			maxIndex = 0
-			if int(c) >= button :
-				maxIndex = i
-		
-				
-
-
+buttons = list(range(10))
+for i in broken :
+	buttons.remove(i)
+	
+min_count = abs(N-100)
+for num in range(1000001):
+	num = str(num)
+	is_possible = True
+	for n in num :
+		if int(n) not in buttons :
+			is_possible = False
+			break
+	if is_possible :
+		min_count = min(min_count, abs(N-int(num))+len(num))
+print(min_count)
