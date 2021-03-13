@@ -3,17 +3,17 @@ input = stdin.readline
 
 N, K = map(int, input().split())
 
-cnt_sec = 0
-cnt_hour = 0
-for i in range(60):
-	if str(K) in str(i) :
-		cnt_sec += 1
-for i in range(N):
-	if i < 10 :
-		i = "0"+str(i)
-	if str(K) in str(i) :
-		cnt_hour += 1
-print(cnt_hour*3600+(N+1-cnt_hour)*(120-cnt_sec)*cnt_sec)
+# cnt_sec = 0
+# cnt_hour = 0
+# for i in range(60):
+# 	if str(K) in str(i) :
+# 		cnt_sec += 1
+# for i in range(N):
+# 	if i < 10 :
+# 		i = "0"+str(i)
+# 	if str(K) in str(i) :
+# 		cnt_hour += 1
+# print(cnt_hour*3600+(N+1-cnt_hour)*(120-cnt_sec)*cnt_sec)
 
 
 # 완전 탐색
