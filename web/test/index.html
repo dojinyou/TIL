@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<h2>To-do list</h2>
+		</header>
+		<main>
+			<section>
+				<input type="text" name="todo_title" id="todo_title" />
+				<button type="button" id="input_button">click</button>
+			</section>
+			<section>
+				<ul id="todo_items"></ul>
+			</section>
+		</main>
+		<script type="text/javascript">
+			let input_button = document.getElementById('input_button');
+			input_button.addEventListener('click', addItem);
+			function addItem() {
+				let todo_item = document.getElementById('todo_title').value;
+				document.getElementById('todo_title').value = '';
+
+				let new_div = document.createElement('div');
+
+				let new_li = document.createElement('li');
+				new_li.textContent = todo_item;
+
+				let delete_button = document.createElement('button');
+				delete_button.textContent = 'delete';
+				delete_button.addEventListener('click', () => {
+					console.log('작동');
+					new_div.parentNode.removeChild(new_div);
+				});
+
+				new_div.appendChild(new_li);
+				new_div.appendChild(delete_button);
+
+				let todo_items = document.getElementById('todo_items');
+				todo_items.appendChild(new_div);
+			}
+		</script>
+	</body>
+</html>
